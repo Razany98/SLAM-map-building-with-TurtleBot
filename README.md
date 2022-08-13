@@ -46,31 +46,31 @@ For the simulation packages go to: https://emanual.robotis.com/docs/en/platform/
 #### Launch Simulation World: 
 
 There are 3 simulation environments and different models for TurtleBot3. Select one to launch gazebo and write its commands in a new terminal. 
-- Empty Wrold: 
-$ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
 
-- TurtleBot3 World 
-$ export TURTLEBOT3_MODEL=waffle
-$ roslaunch turtlebot3_gazebo turtlebot3_world.launch 
+###### Empty Wrold: 
+- $ export TURTLEBOT3_MODEL=burger
+- $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
 
-- TurtleBot3 House
-$ export TURTLEBOT3_MODEL=waffle_pi
-$ roslaunch turtlebot3_gazebo turtlebot3_house.launch 
+###### TurtleBot3 World 
+- $ export TURTLEBOT3_MODEL=waffle
+- $ roslaunch turtlebot3_gazebo turtlebot3_world.launch 
 
-Now gazebo will open. 
+###### TurtleBot3 House
+- $ export TURTLEBOT3_MODEL=waffle_pi
+- $ roslaunch turtlebot3_gazebo turtlebot3_house.launch 
+
+#### Now gazebo will open. 
 
 ![](images/gazebo.png)
 
-To operate TurtleBot, open a new terminal tab and 
-
-To run SLAM node, go to website: https://emanual.robotis.com/docs/en/platform/turtlebot3/slam/ 
+To run SLAM node, go to the website: https://emanual.robotis.com/docs/en/platform/turtlebot3/slam/ 
 
 Open a new terminal tab and paste the following commands: 
+
 - $ export TURTLEBOT3_MODEL=waffle (change waffle to the model you are using, either burger or waffle_pi)
 - $ roslaunch turtlebot3_slam turtlebot3_slam.launch
 
-Now Rviz will open. 
+#### Now Rviz will open. 
 
 ![](images/Rviz.png)
 
@@ -82,4 +82,4 @@ Set of instruction will appear on the screen.
 
 ![](images/instruction.jpg) 
 
-Now you can control the movements of your robot miles away. 
+##### Now you can control the movements of your robot miles away. 
