@@ -1,4 +1,4 @@
-#### SLAM (simultaneous localization and mapping) is a technique used to create and build a map for a telecontrol of the robotics. 
+#### SLAM (Simultaneous Localization and Mapping) is a technique used to create and build a map for a telecontrol of the robotics. 
 
 In order to do that you need to download the turtlebot packages and follow some steps: 
 
