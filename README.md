@@ -36,4 +36,29 @@ Choose your ROS version first.
 - $ sudo apt install ros-noetic-turtlebot3-msgs
 - $ sudo apt install ros-noetic-turtlebot3 
 
-For the simulation packages go to: https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/ 
+For the simulation packages go to: https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/ and write the commands in order. 
+
+#### Install Simulation Package:
+- $ cd ~/catkin_ws/src/
+- $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+- $ cd ~/catkin_ws && catkin_make 
+
+#### Launch Simulation World: 
+
+There are 3 simulation environments for TurtleBot3. Select one to launch gazebo and write its commands in a new terminal. 
+- Empty Wrold: 
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
+
+- TurtleBot3 World 
+$ export TURTLEBOT3_MODEL=waffle
+$ roslaunch turtlebot3_gazebo turtlebot3_world.launch 
+
+- TurtleBot3 House
+$ export TURTLEBOT3_MODEL=waffle_pi
+$ roslaunch turtlebot3_gazebo turtlebot3_house.launch 
+
+Now gazebo will open
+
+![](images/gazebo.png)
+
