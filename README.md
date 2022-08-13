@@ -79,3 +79,7 @@ Now to run the teleoperation node and control the movement of your robot model, 
 - $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch 
 
 Set of instruction will appear on the screen. 
+
+! [](images/commands.png) 
+
+Now you can control the movements of your robot miles away. 
