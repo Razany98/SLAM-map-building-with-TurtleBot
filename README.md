@@ -45,7 +45,7 @@ For the simulation packages go to: https://emanual.robotis.com/docs/en/platform/
 
 #### Launch Simulation World: 
 
-There are 3 simulation environments for TurtleBot3. Select one to launch gazebo and write its commands in a new terminal. 
+There are 3 simulation environments and different models for TurtleBot3. Select one to launch gazebo and write its commands in a new terminal. 
 - Empty Wrold: 
 $ export TURTLEBOT3_MODEL=burger
 $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
@@ -58,7 +58,24 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 $ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_gazebo turtlebot3_house.launch 
 
-Now gazebo will open
+Now gazebo will open. 
 
 ![](images/gazebo.png)
 
+To operate TurtleBot, open a new terminal tab and 
+
+To run SLAM node, go to website: https://emanual.robotis.com/docs/en/platform/turtlebot3/slam/ 
+
+Open a new terminal tab and paste the following commands: 
+- $ export TURTLEBOT3_MODEL=waffle (change waffle to the model you are using, either burger or waffle_pi)
+- $ roslaunch turtlebot3_slam turtlebot3_slam.launch
+
+Now Rviz will open. 
+
+![](images/Rviz.png)
+
+Now to run the teleoperation node and control the movement of your robot model, open a new terminal tab and paste: 
+- $ export TURTLEBOT3_MODEL=burger
+- $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch 
+
+Set of instruction will appear on the screen. 
