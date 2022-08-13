@@ -12,14 +12,14 @@ Choose your ROS version first.
 
 ![](images/remote.jpg)
 
-####  Install ROS on Remote PC and write the follwoing commands: 
+#### 1 - Install ROS on Remote PC and write the follwoing commands: 
 - $ sudo apt update
 - $ sudo apt upgrade
 - $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_noetic.sh
 - $ chmod 755 ./install_ros_noetic.sh 
 - $ bash ./install_ros_noetic.sh
 
-#### Install Dependent ROS Packages: 
+#### 2 - Install Dependent ROS Packages: 
 - $ sudo apt-get install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
   ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
@@ -31,19 +31,19 @@ Choose your ROS version first.
 
 * Note: The above command is one full command, so copy the entire lines. 
 
-#### Install TurtleBot3 Packages: 
+#### 3 - Install TurtleBot3 Packages: 
 - $ sudo apt install ros-noetic-dynamixel-sdk
 - $ sudo apt install ros-noetic-turtlebot3-msgs
 - $ sudo apt install ros-noetic-turtlebot3 
 
 For the simulation packages go to: https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/ and write the commands in order. 
 
-#### Install Simulation Package:
+#### 1 - Install Simulation Package:
 - $ cd ~/catkin_ws/src/
 - $ git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 - $ cd ~/catkin_ws && catkin_make 
 
-#### Launch Simulation World: 
+#### 2 - Launch Simulation World: 
 
 There are 3 simulation environments and different models for TurtleBot3. Select one to launch gazebo and write its commands in a new terminal. 
 
