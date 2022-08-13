@@ -80,6 +80,6 @@ Now to run the teleoperation node and control the movement of your robot model, 
 
 Set of instruction will appear on the screen. 
 
-! [](images/commands.png) 
+![](images/instruction.jpg) 
 
 Now you can control the movements of your robot miles away. 
