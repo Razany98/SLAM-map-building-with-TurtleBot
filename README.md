@@ -83,3 +83,5 @@ Set of instruction will appear on the screen.
 ![](images/instruction.jpg) 
 
 ##### Now you can control the movements of your robot miles away. 
+
+![](images/simulation.png)
